@@ -1,0 +1,132 @@
+// Note(Computer): This is generated file. You probably should not modify it.
+
+#if !defined WIN32_AM_OPENGL_LOADER_H
+
+PFNGLCREATESHADERPROC glCreateShader;
+PFNGLSHADERSOURCEPROC glShaderSource;
+PFNGLCOMPILESHADERPROC glCompileShader;
+PFNGLCREATEPROGRAMPROC glCreateProgram;
+PFNGLATTACHSHADERPROC glAttachShader;
+PFNGLLINKPROGRAMPROC glLinkProgram;
+PFNGLGETSHADERIVPROC glGetShaderiv;
+PFNGLGETSHADERINFOLOGPROC glGetShaderInfoLog;
+PFNGLDELETESHADERPROC glDeleteShader;
+PFNGLUSEPROGRAMPROC glUseProgram;
+PFNGLVERTEXATTRIBPOINTERPROC glVertexAttribPointer;
+PFNGLENABLEVERTEXATTRIBARRAYPROC glEnableVertexAttribArray;
+PFNGLDISABLEVERTEXATTRIBARRAYPROC glDisableVertexAttribArray;
+PFNGLGENBUFFERSPROC glGenBuffers;
+PFNGLBINDBUFFERPROC glBindBuffer;
+PFNGLBUFFERDATAPROC glBufferData;
+PFNGLGENVERTEXARRAYSPROC glGenVertexArrays;
+PFNGLBINDVERTEXARRAYPROC glBindVertexArray;
+PFNGLDEBUGMESSAGECALLBACKPROC glDebugMessageCallback;
+PFNGLUNIFORM1FPROC glUniform1f;
+PFNGLUNIFORM2FPROC glUniform2f;
+PFNGLUNIFORM3FPROC glUniform3f;
+PFNGLUNIFORM4FPROC glUniform4f;
+PFNGLUNIFORM3FVPROC glUniform3fv;
+PFNGLUNIFORMMATRIX4FVPROC glUniformMatrix4fv;
+PFNGLBLENDEQUATIONPROC glBlendEquation;
+PFNGLUNIFORM1IPROC glUniform1i;
+PFNGLBINDSAMPLERPROC glBindSampler;
+PFNGLACTIVETEXTUREPROC glActiveTexture;
+PFNGLDRAWELEMENTSBASEVERTEXPROC glDrawElementsBaseVertex;
+PFNGLGETUNIFORMLOCATIONPROC glGetUniformLocation;
+PFNGLGETATTRIBLOCATIONPROC glGetAttribLocation;
+PFNGLDELETEBUFFERSPROC glDeleteBuffers;
+PFNGLDETACHSHADERPROC glDetachShader;
+PFNGLDELETEPROGRAMPROC glDeleteProgram;
+PFNGLGETPROGRAMINFOLOGPROC glGetProgramInfoLog;
+PFNGLGETPROGRAMIVPROC glGetProgramiv;
+PFNGLBLENDEQUATIONSEPARATEPROC glBlendEquationSeparate;
+PFNGLDELETEVERTEXARRAYSPROC glDeleteVertexArrays;
+PFNGLBLENDFUNCSEPARATEPROC glBlendFuncSeparate;
+
+static void win32_am_load_opengl_functions()
+{
+	Assert(glCreateShader == nullptr);
+	Assert(glShaderSource == nullptr);
+	Assert(glCompileShader == nullptr);
+	Assert(glCreateProgram == nullptr);
+	Assert(glAttachShader == nullptr);
+	Assert(glLinkProgram == nullptr);
+	Assert(glGetShaderiv == nullptr);
+	Assert(glGetShaderInfoLog == nullptr);
+	Assert(glDeleteShader == nullptr);
+	Assert(glUseProgram == nullptr);
+	Assert(glVertexAttribPointer == nullptr);
+	Assert(glEnableVertexAttribArray == nullptr);
+	Assert(glDisableVertexAttribArray == nullptr);
+	Assert(glGenBuffers == nullptr);
+	Assert(glBindBuffer == nullptr);
+	Assert(glBufferData == nullptr);
+	Assert(glGenVertexArrays == nullptr);
+	Assert(glBindVertexArray == nullptr);
+	Assert(glDebugMessageCallback == nullptr);
+	Assert(glUniform1f == nullptr);
+	Assert(glUniform2f == nullptr);
+	Assert(glUniform3f == nullptr);
+	Assert(glUniform4f == nullptr);
+	Assert(glUniform3fv == nullptr);
+	Assert(glUniformMatrix4fv == nullptr);
+	Assert(glBlendEquation == nullptr);
+	Assert(glUniform1i == nullptr);
+	Assert(glBindSampler == nullptr);
+	Assert(glActiveTexture == nullptr);
+	Assert(glDrawElementsBaseVertex == nullptr);
+	Assert(glGetUniformLocation == nullptr);
+	Assert(glGetAttribLocation == nullptr);
+	Assert(glDeleteBuffers == nullptr);
+	Assert(glDetachShader == nullptr);
+	Assert(glDeleteProgram == nullptr);
+	Assert(glGetProgramInfoLog == nullptr);
+	Assert(glGetProgramiv == nullptr);
+	Assert(glBlendEquationSeparate == nullptr);
+	Assert(glDeleteVertexArrays == nullptr);
+	Assert(glBlendFuncSeparate == nullptr);
+
+	glCreateShader = reinterpret_cast<decltype(glCreateShader)>(wglGetProcAddress("glCreateShader"));
+	glShaderSource = reinterpret_cast<decltype(glShaderSource)>(wglGetProcAddress("glShaderSource"));
+	glCompileShader = reinterpret_cast<decltype(glCompileShader)>(wglGetProcAddress("glCompileShader"));
+	glCreateProgram = reinterpret_cast<decltype(glCreateProgram)>(wglGetProcAddress("glCreateProgram"));
+	glAttachShader = reinterpret_cast<decltype(glAttachShader)>(wglGetProcAddress("glAttachShader"));
+	glLinkProgram = reinterpret_cast<decltype(glLinkProgram)>(wglGetProcAddress("glLinkProgram"));
+	glGetShaderiv = reinterpret_cast<decltype(glGetShaderiv)>(wglGetProcAddress("glGetShaderiv"));
+	glGetShaderInfoLog = reinterpret_cast<decltype(glGetShaderInfoLog)>(wglGetProcAddress("glGetShaderInfoLog"));
+	glDeleteShader = reinterpret_cast<decltype(glDeleteShader)>(wglGetProcAddress("glDeleteShader"));
+	glUseProgram = reinterpret_cast<decltype(glUseProgram)>(wglGetProcAddress("glUseProgram"));
+	glVertexAttribPointer = reinterpret_cast<decltype(glVertexAttribPointer)>(wglGetProcAddress("glVertexAttribPointer"));
+	glEnableVertexAttribArray = reinterpret_cast<decltype(glEnableVertexAttribArray)>(wglGetProcAddress("glEnableVertexAttribArray"));
+	glDisableVertexAttribArray = reinterpret_cast<decltype(glDisableVertexAttribArray)>(wglGetProcAddress("glDisableVertexAttribArray"));
+	glGenBuffers = reinterpret_cast<decltype(glGenBuffers)>(wglGetProcAddress("glGenBuffers"));
+	glBindBuffer = reinterpret_cast<decltype(glBindBuffer)>(wglGetProcAddress("glBindBuffer"));
+	glBufferData = reinterpret_cast<decltype(glBufferData)>(wglGetProcAddress("glBufferData"));
+	glGenVertexArrays = reinterpret_cast<decltype(glGenVertexArrays)>(wglGetProcAddress("glGenVertexArrays"));
+	glBindVertexArray = reinterpret_cast<decltype(glBindVertexArray)>(wglGetProcAddress("glBindVertexArray"));
+	glDebugMessageCallback = reinterpret_cast<decltype(glDebugMessageCallback)>(wglGetProcAddress("glDebugMessageCallback"));
+	glUniform1f = reinterpret_cast<decltype(glUniform1f)>(wglGetProcAddress("glUniform1f"));
+	glUniform2f = reinterpret_cast<decltype(glUniform2f)>(wglGetProcAddress("glUniform2f"));
+	glUniform3f = reinterpret_cast<decltype(glUniform3f)>(wglGetProcAddress("glUniform3f"));
+	glUniform4f = reinterpret_cast<decltype(glUniform4f)>(wglGetProcAddress("glUniform4f"));
+	glUniform3fv = reinterpret_cast<decltype(glUniform3fv)>(wglGetProcAddress("glUniform3fv"));
+	glUniformMatrix4fv = reinterpret_cast<decltype(glUniformMatrix4fv)>(wglGetProcAddress("glUniformMatrix4fv"));
+	glBlendEquation = reinterpret_cast<decltype(glBlendEquation)>(wglGetProcAddress("glBlendEquation"));
+	glUniform1i = reinterpret_cast<decltype(glUniform1i)>(wglGetProcAddress("glUniform1i"));
+	glBindSampler = reinterpret_cast<decltype(glBindSampler)>(wglGetProcAddress("glBindSampler"));
+	glActiveTexture = reinterpret_cast<decltype(glActiveTexture)>(wglGetProcAddress("glActiveTexture"));
+	glDrawElementsBaseVertex = reinterpret_cast<decltype(glDrawElementsBaseVertex)>(wglGetProcAddress("glDrawElementsBaseVertex"));
+	glGetUniformLocation = reinterpret_cast<decltype(glGetUniformLocation)>(wglGetProcAddress("glGetUniformLocation"));
+	glGetAttribLocation = reinterpret_cast<decltype(glGetAttribLocation)>(wglGetProcAddress("glGetAttribLocation"));
+	glDeleteBuffers = reinterpret_cast<decltype(glDeleteBuffers)>(wglGetProcAddress("glDeleteBuffers"));
+	glDetachShader = reinterpret_cast<decltype(glDetachShader)>(wglGetProcAddress("glDetachShader"));
+	glDeleteProgram = reinterpret_cast<decltype(glDeleteProgram)>(wglGetProcAddress("glDeleteProgram"));
+	glGetProgramInfoLog = reinterpret_cast<decltype(glGetProgramInfoLog)>(wglGetProcAddress("glGetProgramInfoLog"));
+	glGetProgramiv = reinterpret_cast<decltype(glGetProgramiv)>(wglGetProcAddress("glGetProgramiv"));
+	glBlendEquationSeparate = reinterpret_cast<decltype(glBlendEquationSeparate)>(wglGetProcAddress("glBlendEquationSeparate"));
+	glDeleteVertexArrays = reinterpret_cast<decltype(glDeleteVertexArrays)>(wglGetProcAddress("glDeleteVertexArrays"));
+	glBlendFuncSeparate = reinterpret_cast<decltype(glBlendFuncSeparate)>(wglGetProcAddress("glBlendFuncSeparate"));
+}
+
+#define WIN32_AM_OPENGL_LOADER_H
+#endif

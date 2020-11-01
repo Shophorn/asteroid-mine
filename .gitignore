@@ -1,0 +1,13 @@
+*.dll
+*.lib
+*.bat
+*.sublime*
+*.exe
+*.pdb
+*.ilk
+*.ini
+*.build_output
+
+assets/
+include/
+util/
